@@ -181,8 +181,8 @@ h1, p, li, button, footer{
     transform: scale(1);
 }
 .location{
-    padding: 50px 0;
-    margin: 50px 0 ;
+    padding: 50px 0 50px;
+    margin: 50px 0 25px;
     align-items: center;
     align-content: flex-end;
 }
@@ -195,7 +195,7 @@ h1, p, li, button, footer{
 .section{
     text-align: center;
     margin: 0;
-    padding: 8px;
+    padding: 50px 0 25px;
     background-image: radial-gradient(#000000, #4d4d4d, #000000);
 }
 
