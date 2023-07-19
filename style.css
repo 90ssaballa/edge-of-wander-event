@@ -3,18 +3,47 @@ body {
     padding: 0;
 }
 
-h1, p, li, button, footer{
+header, h1, p, li, button, footer{
     font-family: 'Libre Baskerville', monospace;
 }
 
 
 /** NAV **/
+    /**countdown**/
+.site-header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 2px;
+    text-align: center;
+
+}
+
+.head p{
+    margin: 0 5px;
+    font-size: 12px;
+    color: black;
+    text-shadow: 2px 2px 2px white;
+    display: inline-block;
+    letter-spacing: 1.25px;
+}
+
 .main-nav{
     display: flex;
     list-style: none;
-    margin: 0;
+    margin: 20px 0 0;
     align-items: center;
     background-image: linear-gradient(#e5e5e5,#000000, #4d4d4d);
+}
+
+.sticky{
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.sticky  ul{
+    padding-left: 15px;
 }
 
 .main-nav img{
@@ -24,9 +53,6 @@ h1, p, li, button, footer{
 @media only screen and (max-width: 600px){
     .main-nav img{
         width: 145px;
-    }
-    .main-nav ul{
-        padding-left: 0;
     }
 }
 
@@ -59,17 +85,13 @@ h1, p, li, button, footer{
     color: black;
 }
      
-.sticky{
-    position: fixed;
-    top: 0;
-    width: 100%;
-}
+
 
 /** EVENT POSTER **/
 
 .container {
-    padding-top: 65px; 
     height: 800px;
+    width: 100%;
 }
 
 #bg{
@@ -80,7 +102,7 @@ h1, p, li, button, footer{
 }
 
 .headline {
-    padding: 210px 10px 10px;
+    padding: 210px 0 0;
     color: #fff;
     text-shadow: 4px 4px 4px black;
     text-align: center;
@@ -162,12 +184,12 @@ h1, p, li, button, footer{
     position: absolute;
     top: 10%;
     right: 20px;
-    font-size: 35px;
+    font-size: 25px;
     cursor: pointer;
 }
 .video-container video{
     width: 90%;
-    max-width: 900px;
+    max-width: 800px;
     transform: scale(0);
     box-shadow: 0 20px 20px rgba(0, 0 , 0, 0.2);
     outline: none;
@@ -197,19 +219,26 @@ h1, p, li, button, footer{
     text-align: center;
     margin: 0;
     padding: 50px 0 25px;
-    background-image: radial-gradient(#000000, #4d4d4d, #000000);
+    background-image: radial-gradient(#4d4d4d,#000000, #4d4d4d, #000000);
     line-height: 2.5em;
     text-align: center;
     width: 100%;
     max-width: 100%;
 }
 
-h1{
+.section h1{
     color: #fff;
     font-size: 18px;
     text-shadow: 4px 4px 4px black;
     letter-spacing: 1.5px;
 
+}
+.section ul{
+    padding-left: 0;
+}
+.section li{
+    list-style: none;
+    color: #fff;
 }
 
 .box img{
@@ -249,14 +278,13 @@ button:hover {
 .icon li{
     list-style: none;
     display: inline-block;
-    margin: 0 8px;
-    padding: 0;
+    margin: 10px;
 }
 
 .icon img{
-    width: 40px;
+    width: 50px;
     cursor: pointer;
-    
+
 }
 
 
@@ -273,7 +301,7 @@ button:hover {
         max-width: 100%;
         text-align: center;
         display: inline-block;
-        color: #969696;
+        color: #fff;
         font-size: 10px;
 }
 .footer p{
@@ -282,7 +310,7 @@ button:hover {
 }
 .footer a{
     text-decoration: none;
-    color: #969696;
+    color: #d9d9d9;
 }
 
 
