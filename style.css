@@ -84,12 +84,10 @@ h1, p, li, button, footer{
     color: #fff;
     text-shadow: 4px 4px 4px black;
     text-align: center;
+        letter-spacing: 2px;
+
 }
-/*@media only screen and (max-width: 600px){
-    .headline{
-        padding: 275px 10px 10px;
-    }
-*/
+
 .headline ul{
     padding-left: 0;
 }
@@ -98,18 +96,16 @@ h1, p, li, button, footer{
 
 .headline h1{
     font-size: 80px;
-    letter-spacing: 1.5px;
 }
    
 
 .headline li{
     list-style: none;
     font-size: 18px;
-    letter-spacing: 2px;
 }
 @media only screen and (max-width: 700px){
     .headline h1{
-        font-size: 45px;
+        font-size: 50px;
     }
     .headline li{
         font-size: 13px;
@@ -220,6 +216,7 @@ h1{
         width: 250px;
     }
 }
+
 button{
     cursor: pointer;
     background: #fff;
@@ -234,18 +231,10 @@ button:hover {
     border-width: 3px;
     color: black;
 }
-
-
-
-/** FOOTER **/
-.footer{
-    margin: 0;
-    background-image: linear-gradient(#e5e5e5,#000000, #4d4d4d);
-
-}
 .icon{
     display: flex;
     justify-content: center;
+
 }
 .icon ul{
     padding: 0;
@@ -257,18 +246,37 @@ button:hover {
     display: inline-block;
     margin: 0 8px;
     padding: 0;
-    
 }
 
 .icon img{
-    width: 35px;
+    width: 40px;
     cursor: pointer;
     
 }
 
-.footer p{
+
+/** FOOTER **/
+.footer{
     margin: 0;
-    font-size: 8px;
-    text-align: center;
+    padding: 0;
+    background-image: linear-gradient(#e5e5e5,#000000, #4d4d4d, #e5e5e5);
+         cursor: default;
+        line-height: 5em;
+        position: absolute;
+        text-align: center;
+        width: 100%;
+        max-width: 100%;
+        text-align: center;
+        display: inline-block;
+        color: #fff;
+        font-size: 12px;
+}
+
+.footer a{
+    text-decoration: none;
     color: #fff;
 }
+
+
+
+
