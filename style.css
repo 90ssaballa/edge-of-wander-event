@@ -208,12 +208,12 @@ h1{
 }
 
 .box img{
-    width: 350px;
+    width: 375px;
     cursor: pointer;
 }
 @media only screen and (max-width: 800px){
     .box img{
-        width: 250px;
+        width: 325px;
     }
 }
 
@@ -269,7 +269,7 @@ button:hover {
         text-align: center;
         display: inline-block;
         color: #fff;
-        font-size: 12px;
+        font-size: 10px;
 }
 
 .footer a{
