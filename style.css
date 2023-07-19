@@ -84,7 +84,7 @@ h1, p, li, button, footer{
     color: #fff;
     text-shadow: 4px 4px 4px black;
     text-align: center;
-        letter-spacing: 2px;
+    letter-spacing: 2px;
 
 }
 
@@ -189,6 +189,7 @@ h1, p, li, button, footer{
 .location img{
     width: 25px;
     opacity: 0.75;
+
 }
 
 /** ALBUM **/
@@ -197,6 +198,10 @@ h1, p, li, button, footer{
     margin: 0;
     padding: 50px 0 25px;
     background-image: radial-gradient(#000000, #4d4d4d, #000000);
+    line-height: 2.5em;
+    text-align: center;
+    width: 100%;
+    max-width: 100%;
 }
 
 h1{
