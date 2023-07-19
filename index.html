@@ -5,14 +5,49 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="style.css">
-
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre Baskerville">
 </head>
 <body>
 
 <!--NAV -->
+	<header class="site-header">
+		<div class="head" >
+			
+			<p id="countdown"></p>
+			
 
-	<nav class="zone sticky">
+			<script type="text/javascript">
+				var countDownDate = new Date("Sept 28, 2023 18:00").getTime();
+
+				// Update the count down every 1 second
+				var x = setInterval(function() {
+
+				  // Get today's date and time
+				  var now = new Date().getTime();
+				    
+				  // Find the distance between now and the count down date
+				  var distance = countDownDate - now;
+				    
+				  // Time calculations for days
+				  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+				  
+				    
+				  // Output the result in an element with id="demo"
+				  document.getElementById("countdown").innerHTML = "W e l c o m e  ! " + " ~ " + days  + " days " + " until  Edge of Wonder" ;
+				    
+				  // If the count down is over, write some text 
+				  if (distance < 0) {
+				    clearInterval(x);
+				    document.getElementById("countdown").innerHTML = "Thank you to everyone who attended this event !";
+				  }
+				}, 1000); 
+
+			</script>
+		</div>
+		
+		
+	</header>
+	<nav class="sticky">
 
 		<ul class="main-nav">
 			<li><a href="https://www.youtube.com/@THEDIVIESTUDIO" target="_blank"><img src="images/logo.png"></a></li>
@@ -43,14 +78,17 @@
 	  					<div class="video-container">
 	  						<span class="close">&#10006;</span>
 	  						<video  id="promo" src="images/promo.mp4" type="video/mp4"controls></video>
+
 						</div>											
 																								
 	  						<script>
-		  						const btn = document.querySelector('.btn');
+		  						var btn = document.querySelector('.btn');
 
-								const videoContainer = document.querySelector('.video-container');
+								var videoContainer = document.querySelector('.video-container');
 
-								const close = document.querySelector('.close');
+								var close = document.querySelector('.close');
+
+								var x = document.getElementById("promo");
 
 
 								btn.addEventListener('click', ()=>{
@@ -61,6 +99,13 @@
 								close.addEventListener('click', ()=>{
 								videoContainer.classList.remove('show');
 								})
+
+								close.addEventListener('click', ()=>{
+								x.pause();
+								})
+
+
+								
 	  						</script>
 
 	  			</div>
@@ -72,25 +117,37 @@
 <!-- ALBUM -->
 
 	  <div class="section">
-	  	<h1>From the Album: "Indoor Thoughts"</h1>
+	  	<h1>Album: "Indoor Thoughts"</h1>
+	  		<p>
+	  			<ul>
+	  				<li>1. Porto Wine Cocktail</li>
+	  				<li>2. Glasgow Green</li>
+	  				<li>3. Indoor Thoughts</li>
+	  				<li>4. Cozy Jam in Berlin</li>
+	  				<li>5. A Song for My Little Sister</li>
+	  				<li>6. That Bridge in Glasgow</li>
+	  				<li>7. Pés N'Areia</li>
+	  				<li>8. H.O.P.E.</li>
+	  			</ul>
+	  		</p>
 	  		<div class="box zone"><img src="images/album.jpg"></div>
 	  	<p><button onclick="window.open('https://open.spotify.com/album/5nwOjrxHBM5TA18aPQr3Lp?si=NIP0PY1lSz6yWCS4BkyzIQ')">LISTEN TO ALBUM</button></p>
 	  		
 
-	  	<div class="icon">
-			<ul>
-				<li><a href="https://www.facebook.com/t.tiny.musician" target="_blank"><img src="images/facebook.png"></a></li>
-				<li><a href="https://www.youtube.com/@joanacarvalhas8456" target="_blank"><img src="images/youtube.png"></a></li>
-				<li><a href="https://instagram.com/the.tiny.musician?igshid=Y2IzZGU1MTFhOQ==" target="_blank"><img src="images/instagram.png"></a></li>
-			</ul>
-		</div>		  
-	</div>
+	  		<div class="icon">
+				<ul>
+					<li><a href="https://www.facebook.com/t.tiny.musician" target="_blank"><img src="images/facebook.png"></a></li>
+					<li><a href="https://www.youtube.com/@joanacarvalhas8456" target="_blank"><img src="images/youtube.png"></a></li>
+					<li><a href="https://instagram.com/the.tiny.musician?igshid=Y2IzZGU1MTFhOQ==" target="_blank"><img src="images/instagram.png"></a></li>
+				</ul>
+			</div>		  
+		</div>
 
 	 	 	
 	  <footer class="footer">
 	  	<p>Made with &#10084; by Sarah Saballa || <a target="_blank" href="https://github.com/sarahjq-s">Github</a></p>
 	  	<p>App icons by <a target="_blank" href="https://icons8.com/icons/">Icons8</a>.</p>
-	  </footer>
+	 </footer>
 	  
 	</body>
 </html>
