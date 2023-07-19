@@ -266,7 +266,7 @@ button:hover {
     padding: 0;
     background-image: linear-gradient(#e5e5e5,#000000, #4d4d4d, #e5e5e5);
          cursor: default;
-        line-height: 5em;
+        line-height: 2.5em;
         position: absolute;
         text-align: center;
         width: 100%;
@@ -276,7 +276,10 @@ button:hover {
         color: #fff;
         font-size: 10px;
 }
-
+.footer p{
+    margin: 0;
+    padding: 0;
+}
 .footer a{
     text-decoration: none;
     color: #fff;
