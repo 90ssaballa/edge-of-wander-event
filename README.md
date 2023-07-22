@@ -14,3 +14,7 @@ I would greatly appreciate feedback to improve this page. :)
 
 This was a fun project! It helped me understand the concepts I learned and be able to apply it.
 Thank y'all!
+
+
+---UPDATE 7/22/23---
+I got a feedback that it would be nice to have the modal window closed when the Escape button is pressed or the outside of the modal window is clicked. I did my best to find a solution and made the update. :)
