@@ -54,7 +54,8 @@
 		<ul class="main-nav">
 			<li><a href="https://www.youtube.com/@THEDIVIESTUDIO" target="_blank"><img src="images/logo.png"></a></li>
 
-			<li class="push"><a href="https://www.eventbrite.com/e/edge-of-wander-tickets-674007212717?utm_source=eventbrite&utm_medium=email&utm_campaign=post_publish&utm_content=shortLinkNewEmail"><img src="images/ticket.png">BUY TICKET</a></li></ul>
+			<li class="push"><a href="https://www.eventbrite.com/e/edge-of-wander-tickets-674007212717?utm_source=eventbrite&utm_medium=email&utm_campaign=post_publish&utm_content=shortLinkNewEmail"><img src="images/ticket.png">BUY TICKET</a></li>
+		</ul>
 	</nav>
 
 <!-- EVENT POSTER -->
@@ -83,13 +84,15 @@
 						</div>											
 																								
 	  						<script>
+	  						
 		  						var btn = document.querySelector('.btn');
 
 								var videoContainer = document.querySelector('.video-container');
 
-								var close = document.querySelector('.close');
+								
+								var video = document.getElementById("promo");
 
-								var x = document.getElementById("promo");
+								var closeVideo = document.querySelector('.video-container');
 
 
 								btn.addEventListener('click', ()=>{
@@ -97,16 +100,23 @@
 
 								})
 
-								close.addEventListener('click', ()=>{
+								closeVideo.addEventListener('click', ()=>{
 								videoContainer.classList.remove('show');
+								 video.pause();
+								 video.currentTime = 0;
+								 video.load();
+
 								})
 
-								close.addEventListener('click', ()=>{
-								x.pause();
+								closeVideo.addEventListener('keydown', ()=>{
+								if (event.key === 'Escape') {
+								videoContainer.classList.remove('show');
+								 video.pause();
+								 video.currentTime = 0;
+								 video.load();	
+								}
 								})
-
-
-								
+						
 	  						</script>
 
 	  			</div>
@@ -149,6 +159,6 @@
 	  	<p>Made with &#10084; by Sarah Saballa || <a target="_blank" href="https://github.com/sarahjq-s">Github</a></p>
 	  	<p>App icons by <a target="_blank" href="https://icons8.com/icons/">Icons8</a>.</p>
 	 </footer>
-	  
+	  <script type="text/javascript" href="script.js"></script> 
 	</body>
 </html>
