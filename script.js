@@ -27,9 +27,12 @@ var btn = document.querySelector('.btn');
 
 var videoContainer = document.querySelector('.video-container');
 
+
 var video = document.getElementById("promo");
 
-var closeVideo = document.querySelector('.video-container');
+var closeVideo = document.querySelector('.close');
+
+
 
 
 btn.addEventListener('click', ()=>{
@@ -45,7 +48,7 @@ video.load();
 
 })
 
-closeVideo.addEventListener('keydown', ()=>{
+videoContainer.addEventListener('keydown', ()=>{
 if (event.key === 'Escape') {
 videoContainer.classList.remove('show');
 video.pause();
