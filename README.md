@@ -17,4 +17,4 @@ Thank y'all!
 
 
 ---UPDATE 7/22/23---
-I got a feedback that it would be nice to have the modal window closed when the Escape button is pressed or the outside of the modal window is clicked. Working on a solution
+I got a feedback that it would be nice to have the modal window closed when the Escape button is pressed or the outside of the modal window is clicked. I was able to work on closing the video when Escape is pressed, however, in need of help with closing the video when outside of the modal is clicked.
