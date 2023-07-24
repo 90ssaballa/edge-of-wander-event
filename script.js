@@ -1,58 +1,35 @@
-/*var countDownDate = new Date("Sep 28, 2023 18:00").getTime();
+var modal = document.getElementById("video-modal");
 
-        // Update the count down every 1 second
-        var x = setInterval(function() {
+var btn = document.getElementById("btn");
 
-          // Get today's date and time
-          var now = new Date().getTime();
-            
-          // Find the distance between now and the count down date
-          var distance = countDownDate - now;
-            
-          // Time calculations for days, hours, minutes and seconds
-          var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-          
-            
-          // Output the result in an element with id="demo"
-          document.getElementById("demo").innerHTML = days + " days" ;
-            
-          // If the count down is over, write some text 
-          if (distance < 0) {
-            clearInterval(x);
-            document.getElementById("demo").innerHTML = "EXPIRED";
-          }
-        }, 1000); */
- 
-var btn = document.querySelector('.btn');
-
-var videoContainer = document.querySelector('.video-container');
-
+var span = document.getElementsByClassName("close")[0];
 
 var video = document.getElementById("promo");
 
-var closeVideo = document.querySelector('.close');
-
-
-
-
-btn.addEventListener('click', ()=>{
-videoContainer.classList.add('show');
-
-})
-
-closeVideo.addEventListener('click', ()=>{
-videoContainer.classList.remove('show');
-video.pause();
-video.currentTime = 0;
-video.load();
-
-})
-
-videoContainer.addEventListener('keydown', ()=>{
-if (event.key === 'Escape') {
-videoContainer.classList.remove('show');
-video.pause();
-video.currentTime = 0;
-video.load();  
+function stopVideo(){
+  modal.style.display = "none";
+  video.pause();
+  video.currentTime = 0;
+  video.load();  
 }
+
+btn.addEventListener("click", function(){
+  modal.style.display = "block";
+})
+
+span.addEventListener("click", function(){
+  stopVideo();
+})
+
+window.addEventListener("click", function(event){
+if(event.target === modal){
+    stopVideo();
+  }
+})
+
+window.addEventListener("keydown", function(event){
+ if(event.keyCode === 27){
+  stopVideo();
+
+  }
 })
