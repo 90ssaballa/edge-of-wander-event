@@ -74,57 +74,22 @@
 	  				</ul>
 
 
-	 			<div class="button">
-	 				<a class="btn" >WATCH TRAILER</a>
+	 			<div class="play-button">
+	 				<button id="btn">WATCH TRAILER</button>
 	  					  					
-	  					<div class="video-container">
+	  				<div id="video-modal" class="modal">
+
+	  					<div class="video-modal-content">
 	  						<span class="close">&#10006;</span>
 	  						<video  id="promo" src="images/promo.mp4" type="video/mp4" controls></video>
-
-						</div>											
+	  					</div>
+					</div>											
 																								
-	  						<!--<script>
-	  						
-		  						var btn = document.querySelector('.btn');
-
-								var videoContainer = document.querySelector('.video-container');
-
-								
-								var video = document.getElementById("promo");
-
-								var closeVideo = document.querySelector('.video-container');
-
-
-								btn.addEventListener('click', ()=>{
-							    videoContainer.classList.add('show');
-
-								})
-
-								closeVideo.addEventListener('click', ()=>{
-								videoContainer.classList.remove('show');
-								 video.pause();
-								 video.currentTime = 0;
-								 video.load();
-
-								})
-
-								closeVideo.addEventListener('keydown', ()=>{
-								if (event.key === 'Escape') {
-								videoContainer.classList.remove('show');
-								 video.pause();
-								 video.currentTime = 0;
-								 video.load();	
-								}
-								})
-						
-	  						</script>-->
-
-	  			</div>
+	  		</div>
 	  			<p class="location"><img src="images/location.png">Al Larson Prairie Center For the Arts, Schaumburg Court, Schaumburg, IL</p>
 	  		</div>
 	  	</div>
 	  </div>		  	
-	  	
 <!-- ALBUM -->
 
 	  <div class="section">
