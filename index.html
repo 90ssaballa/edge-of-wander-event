@@ -15,36 +15,7 @@
 	<header class="site-header">
 		<div class="head" >
 			<p id="countdown"></p>
-			<p>Get your Tickets now!</p>
-			
-
-			<script type="text/javascript">
-				var countDownDate = new Date("Sept 28, 2023 18:00").getTime();
-
-				// Update the count down every 1 second
-				var x = setInterval(function() {
-
-				  // Get today's date and time
-				  var now = new Date().getTime();
-				    
-				  // Find the distance between now and the count down date
-				  var distance = countDownDate - now;
-				    
-				  // Time calculations for days
-				  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-				  
-				    
-				  // Output the result in an element with id="demo"
-				  document.getElementById("countdown").innerHTML = "W e l c o m e  ! " + " " + days  + " days " + " until  Edge of Wander" ;
-				    
-				  // If the count down is over, write some text 
-				  if (distance < 0) {
-				    clearInterval(x);
-				    document.getElementById("countdown").innerHTML = "Thank you to everyone who attended this event !";
-				  }
-				}, 1000); 
-
-			</script>
+			<p id="ticket"></p>
 		</div>
 		
 		
@@ -54,7 +25,7 @@
 		<ul class="main-nav">
 			<li><a href="https://www.youtube.com/@THEDIVIESTUDIO" target="_blank"><img src="images/logo.png"></a></li>
 
-			<li class="push"><a href="https://www.eventbrite.com/e/edge-of-wander-tickets-674007212717?utm_source=eventbrite&utm_medium=email&utm_campaign=post_publish&utm_content=shortLinkNewEmail"><img src="images/ticket.png">BUY TICKET</a></li>
+			<li class="push"><a href="https://www.eventbrite.com/e/edge-of-wander-tickets-674007212717?utm_source=eventbrite&utm_medium=email&utm_campaign=post_publish&utm_content=shortLinkNewEmail" target="_blank"><img src="images/ticket.png">BUY TICKET</a></li>
 		</ul>
 	</nav>
 
@@ -121,7 +92,7 @@
 
 	 	 	
 	  <footer class="footer">
-	  	<p>&copy;2023 Sarah Saballa || <a target="_blank" href="https://github.com/sarahjq-s">Github</a></p>
+	  	<p>&copy;2023 || Made with &hearts; by Sarah Saballa || <a target="_blank" href="https://github.com/sarahjq-s">Github</a></p>
 	  	<p>App icons by <a target="_blank" href="https://icons8.com/icons/">Icons8</a>.</p>
 	 </footer>
 	  <script type="text/javascript" src="script.js"></script> 
