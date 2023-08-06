@@ -1,34 +1,36 @@
-var countDownDate = new Date("Sept 28, 2023 18:00").getTime();
+/*COUNTDOWN TIMER*/
+let countDownDate = new Date("Sept 28, 2023 18:00").getTime();
 
-var x = setInterval(function() {
+let countdownText = setInterval(function() {
 
-  var now = new Date().getTime();
+let now = new Date().getTime();
             
-  var distance = countDownDate - now;
+let distance = countDownDate - now;
             
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+let days = Math.floor(distance / (1000 * 60 * 60 * 24));
             
               
-  document.getElementById("countdown").innerHTML = "W e l c o m e  ! " + " " + days  + " days " + " until  Edge of Wander" ;
-  document.getElementById("ticket").innerHTML = "Get your Tickets now!" ;
+  document.getElementById("countdownTimer").innerHTML = "Welcome ! " + " " + days  + " days " + " until  Edge of Wander" ;
+  document.getElementById("buy-ticket").innerHTML = "Early bird tickets on sale now thru Sept 1!" ;
  
   if (distance < 0) {
-  clearInterval(x);
-  document.getElementById("countdown").innerHTML = "Thank you to everyone who attended this event !";
-  document.getElementById("ticket").innerHTML = "" ;
+  clearInterval(countdownText);
+  document.getElementById("countdownTimer").innerHTML = "Thank you to everyone who attended this event !";
+  document.getElementById("buy-ticket").innerHTML = "" ;
 
    }
  }, 1000); 
 
 
+/*VIDEO TRAILER*/
 
-var modal = document.getElementById("video-modal");
+let modal = document.getElementById("video-modal");
 
-var btn = document.getElementById("btn");
+let btn = document.getElementById("trailer-btn");
 
-var span = document.getElementsByClassName("close")[0];
+let span = document.getElementsByClassName("close-trailer")[0];
 
-var video = document.getElementById("promo");
+let video = document.getElementById("trailer");
 
 function stopVideo(){
   modal.style.display = "none";
@@ -38,22 +40,68 @@ function stopVideo(){
 }
 
 btn.addEventListener("click", function(){
+  console.log("click");
   modal.style.display = "block";
 })
 
 span.addEventListener("click", function(){
+  console.log("close");
   stopVideo();
 })
 
 window.addEventListener("click", function(event){
 if(event.target === modal){
+  console.log("close");
     stopVideo();
   }
 })
 
 window.addEventListener("keydown", function(event){
  if(event.keyCode === 27){
+  console.log("close");
   stopVideo();
+
+  }
+})
+
+/*YOUTUBE*/
+
+let youtubeModal = document.getElementById("youtube-modal");
+
+let youtubeBtn = document.getElementById("yt-btn");
+
+let close = document.getElementsByClassName("close-youtube")[0];
+
+let youtube = document.querySelector("youtube");
+
+function stopYoutube(){
+  youtubeModal.style.display = "none";
+  // youtube.pause(); need to research more about how to stop embedded youtube videos
+  // youtube.currentTime = 0;
+  // youtube.load();  
+}
+
+youtubeBtn.addEventListener("click", function(){
+  console.log("click");
+  youtubeModal.style.display = "block";
+})
+
+close.addEventListener("click", function(){
+  console.log("close");
+  stopYoutube();
+})
+
+window.addEventListener("click", function(event){
+if(event.target === youtubeModal){
+  console.log("close");
+    stopYoutube();
+  }
+})
+
+window.addEventListener("keydown", function(event){
+ if(event.keyCode === 27){
+  console.log("close");
+  stopYoutube();
 
   }
 })
