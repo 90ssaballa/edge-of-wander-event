@@ -404,7 +404,11 @@ section{
 
 
 /**MOBILE**/
-
+@media (min-width:1000px){
+ #artist {
+    padding: 25px 300px;
+}
+}
 @media (max-width:1000px){
     nav ul{
     position: fixed;
