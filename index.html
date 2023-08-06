@@ -6,91 +6,122 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="Violin concert Chicago suburbs Edge of Wander">
   <link rel="stylesheet" type="text/css" href="style.css">
-
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre Baskerville">
 </head>
 <body>
 
 <!--NAV -->
-	<header class="site-header">
-		<div class="head" >
-			<p id="countdown"></p>
-			<p id="ticket"></p>
+	<header class="site-header sticky">
+			<p id="countdownTimer"></p>
+			<p id="buy-ticket"></p>
+	</header>
+
+	<nav class="main-nav sticky">
+		<input type="checkbox" name="" id="chk1">
+		<div class="logo">
+			<a href="https://www.youtube.com/@THEDIVIESTUDIO" target="_blank"><img src="images/logo.png"></a>
 		</div>
 		
-		
-	</header>
-	<nav class="sticky">
+		<ul class="links">
+				<li><a href="#event-poster">Home</a></li>
 
-		<ul class="main-nav">
-			<li><a href="https://www.youtube.com/@THEDIVIESTUDIO" target="_blank"><img src="images/logo.png"></a></li>
+				<li><a href="#artist">Artist</a></li>
 
-			<li class="push"><a href="https://www.eventbrite.com/e/edge-of-wander-tickets-674007212717?utm_source=eventbrite&utm_medium=email&utm_campaign=post_publish&utm_content=shortLinkNewEmail" target="_blank"><img src="images/ticket.png">BUY TICKET</a></li>
-		</ul>
+				<li><a href="#album">Album</a></li>
+
+				<li class="push"><a href="https://www.eventbrite.com/e/edge-of-wander-tickets-674007212717?utm_source=eventbrite&utm_medium=email&utm_campaign=post_publish&utm_content=shortLinkNewEmail" target="_blank"><img src="images/ticket.png">BUY TICKET</a></li>
+			</ul>
+		<div class="menu">
+			<label for="chk1">
+			<img id="bar" class="menu-bar" src="images/menu-bar.png">
+			</label>
+		</div>
 	</nav>
-
+	
 <!-- EVENT POSTER -->
-
-	 <div class="container">
+	 <div id="event-poster" class="container">
 	 	<div id="bg">
-
-	 	 	<div class="headline"> 
-	 	 		<h1>EDGE OF WANDER 2023</h1>
+	 		<div class="headline-container"> 
+	 			<h1 class="headline">EDGE OF WANDER 2023</h1>
+	 	 		<h3 class="headline">A  Live Violin Soundscape and Arthouse Cinema</h3>
 	 	 			<ul>
-	 	 				<li>A  LIVE  VIOLIN  SOUNDSCAPE  AND  ARTHOUSE  CINEMA</li>
-	  					<br>
-	  					<li>Introducing Kaylin Kenders</li>
-	  					<li>Live music by Joana Carvalhas</li>
-	  					<li>Film by Serg Saballa</li>
+	 	 				<li class="headline">Introducing Kaylin Kenders</li>
+	  					<li class="headline">Live music by Joana Carvalhas</li>
+	  					<li class="headline">Film by Serg Saballa</li>
+
 	  				</ul>
-
-
-	 			<div class="play-button">
-	 				<button id="btn">WATCH TRAILER</button>
+	 	 		<div class="trailer-button">
+	 				<button id="trailer-btn">WATCH TRAILER</button>
 	  					  					
-	  				<div id="video-modal" class="modal">
+	  				<div id="video-modal" class="modal video-modal">
 
 	  					<div class="video-modal-content">
-	  						<span class="close">&#10006;</span>
-	  						<video  id="promo" src="images/promo.mp4" type="video/mp4" controls></video>
+	  						<span class="close-trailer">&#10006;</span>
+	  						<video  id="trailer" src="images/promo.mp4" type="video/mp4" controls></video>
 	  					</div>
-					</div>											
-																								
-	  		</div>
-	  			<p class="location"><img src="images/location.png">Al Larson Prairie Center For the Arts, Schaumburg Court, Schaumburg, IL</p>
+					</div>
+				</div>	
+
+				<div class="youtube-button">
+	 				<button id="yt-btn">With Lindsey Stirling</button>
+	  					  					
+	  				<div id="youtube-modal" class="modal video-modal">
+
+	  					<div class="video-modal-content">
+	  						<span class="close-youtube">&#10006;</span>
+	  						<iframe id="youtube" width="600" height="500" src="https://www.youtube.com/embed/Gq6vf7C2a4A?enablejsapi=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+	  					</div>
+					</div>
+				</div>											
+			
+					<div class="buy-ticket"><a href="https://www.eventbrite.com/e/edge-of-wander-tickets-674007212717?utm_source=eventbrite&utm_medium=email&utm_campaign=post_publish&utm_content=shortLinkNewEmail" target="_blank"><img src="images/ticket.png">BUY TICKET</a></div>																			
+		  		<h4 class="location"><img src="images/location.png">Al Larson Prairie Center For the Arts, Schaumburg Court, Schaumburg, IL</h4>
 	  		</div>
 	  	</div>
-	  </div>		  	
+	  </div>	
+
+<!-- ARTIST -->
+	<section id="artist"class="section">
+		<div class="artist-profile">		
+			<h1 class="artist-profile">THE ARTIST</h1>
+			<img class="artist-profile" src="images/profilePic.jpg">
+			<h2 class="artist-profile">Joana Carvalhas</h2>
+			<h4 class="artist-profile">The Tiny Musician</h4>
+			<p class="artist-profile">Joana Carvalhas is a multi-style musician actively performing and teaching in Europe, the United States of America and the United Kingdom. She graduated from the Royal Conservatoire of Scotland (UK). She plays jazz, free improvisation, and dynamic concerts with live looping and special effects.</p>
+			<p class="artist-profile">She has performed across the world and tours often in the US, UK, and different countries in Europe. Recently, she shared the stage with Lindsey Stirling in Madrid, Spain.</p>
+		</div>		
+
+		<div class="icon">
+			<ul>
+				<li><a href="https://www.facebook.com/t.tiny.musician" target="_blank"><img src="images/facebook.png"></a></li>
+				<li><a href="https://www.youtube.com/channel/UC9tyAZ10NM9Ja6DcWyI2kAw" target="_blank"><img src="images/youtube.png"></a></li>
+				<li><a href="https://instagram.com/the.tiny.musician?igshid=Y2IzZGU1MTFhOQ==" target="_blank"><img src="images/instagram.png"></a></li>
+				<li><a href="https://www.joanacarvalhas.com/" target="_blank"><img src="images/website.png"></a></li>
+			</ul>
+		</div>		  
+	 </section>
+
 <!-- ALBUM -->
 
-	  <div class="section">
-	  	<h1>Album: "Indoor Thoughts"</h1>
-	  		<p>
-	  			<ul>
-	  				<li>1. Porto Wine Cocktail</li>
-	  				<li>2. Glasgow Green</li>
-	  				<li>3. Indoor Thoughts</li>
-	  				<li>4. Cozy Jam in Berlin</li>
-	  				<li>5. A Song for My Little Sister</li>
-	  				<li>6. That Bridge in Glasgow</li>
-	  				<li>7. Pés N'Areia</li>
-	  				<li>8. H.O.P.E.</li>
-	  			</ul>
-	  		</p>
-	  		<div class="box zone"><img src="images/album.jpg"></div>
-	  	<p><button onclick="window.open('https://open.spotify.com/album/5nwOjrxHBM5TA18aPQr3Lp?si=NIP0PY1lSz6yWCS4BkyzIQ')">LISTEN TO ALBUM</button></p>
-	  		
+	  <section id="album"class="section">
+	  	<h1>The Album</h1>
+	  	<h2>"Indoor Thoughts"</h2>
+	  		<ul>
+	  			<li>1. Porto Wine Cocktail</li>
+	  			<li>2. Glasgow Green</li>
+	  			<li>3. Indoor Thoughts</li>
+	  			<li>4. Cozy Jam in Berlin</li>
+				<li>5. A Song for My Little Sister</li>
+				<li>6. That Bridge in Glasgow</li>
+				<li>7. Pés N'Areia</li>
+				<li>8. H.O.P.E.</li>
+			</ul>
+	  	
+	  		<div class="box"><img src="images/album.jpg"></div>
+	  		<div id="spotify"><a href="https://open.spotify.com/album/5nwOjrxHBM5TA18aPQr3Lp?si=NIP0PY1lSz6yWCS4BkyzIQ" target="_blank">LISTEN ON SPOTIFY</a>
+	  		</div>
+	  </section>
 
-	  		<div class="icon">
-				<ul>
-					<li><a href="https://www.facebook.com/t.tiny.musician" target="_blank"><img src="images/facebook.png"></a></li>
-					<li><a href="https://www.youtube.com/@joanacarvalhas8456" target="_blank"><img src="images/youtube.png"></a></li>
-					<li><a href="https://instagram.com/the.tiny.musician?igshid=Y2IzZGU1MTFhOQ==" target="_blank"><img src="images/instagram.png"></a></li>
-				</ul>
-			</div>		  
-		</div>
-
-	 	 	
+<!--FOOTER-->	 		
 	  <footer class="footer">
 	  	<p>&copy;2023 || Made with &hearts; by Sarah Saballa || <a target="_blank" href="https://github.com/sarahjq-s">Github</a></p>
 	  	<p>App icons by <a target="_blank" href="https://icons8.com/icons/">Icons8</a>.</p>
