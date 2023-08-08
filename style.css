@@ -163,7 +163,7 @@ nav .menu{
 
 
 .headline-container h2{
-    font-size: clamp(.65rem, 2.5vw, 1rem);
+    font-size: clamp(.7rem, 2.5vw, 1rem);
 }
 .headline-container li, .headline-container h4{
      font-size: clamp(.75rem, 2.5vw, 1rem);
