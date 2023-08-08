@@ -1,15 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Ysabeau+SC:wght@300;600;800&display=swap');
-body {
+*{
     margin: 0;
     padding: 0;
-    font-family: "Ysabeau SC", verdana;
     box-sizing: border-box;
+
+}
+
+body {
+    font-family: "Ysabeau SC", verdana;
+    color: #ffff;
 
 }
 html{
     scroll-behavior: smooth;
 }
-
+h1{
+    font-size: clamp(1.65rem, 2.5vw, 3rem);
+}
 ul{
     padding-left: 0;
 }
@@ -17,40 +23,43 @@ ul{
 li{
     list-style: none;
 }
-h1, h2, h3, h4, p, ul, a{
-    text-decoration:none;
+a{
+    text-decoration: none;
     color: #ffff;
-    margin: 0;
-    font-weight: 600;
 }
+
+
 
 /** NAV **/ /*countdown timer*/
 .site-header{
-    border-radius: 2px;
+    height: 50px;
     text-align: center;
+    border-radius: 2px;
     background-color: #ffff;
+    padding: 6px 0;
 } 
-.site-header p{
-    font-size: 16px;
-    color: black;
+#countdownTimer, #buy-ticket{
+    font-size: clamp(.65rem, 2.5vw, 1rem);
+    color: #080808;
     letter-spacing: 1.5px;
-    margin: 6px;
-    font-weight: 800;
+    font-weight: 600;
 }
 
 /**NAV-MENU**/
 .main-nav{
     display: flex;
     align-items: center;
-    margin-top: 55px;
+    margin-top: 50px;
     background-image: linear-gradient(#e5e5e5,#000000, #4d4d4d);
-    height: 50px;
+    height: 45px;
+        box-shadow: 0 2px 2px 1px #050505;
+
 }
 .sticky{
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 99;
+    z-index: 3;
 }
 nav .logo{
     flex: 1;
@@ -89,6 +98,7 @@ nav .menu{
 }
 .links a:hover, .links a:focus{
     font-weight: 800;
+    border-bottom: 2px solid #ffff;
 }
 .push img {
     width: 25px;
@@ -117,20 +127,26 @@ nav .menu{
 
 /** EVENT POSTER **/
 .container {
-    padding-top: 105px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 80px;
+
+}
+.headline-container{
     width: 100%;
+    min-width: 320px;
+    height: 100vh;
     max-width: 100%;
-    min-height: 320px;
-    max-height: 800px;
-    height: 100%;
-    background-color: #ffff;
+    box-shadow: 0 3px 3px 1px #050505;
+
 }
 
 #bg{
     background: url(images/cover.png);
     background-repeat: no-repeat;
     background-size: cover; 
-    height: 100vh;
     width: 100%;
 }
 
@@ -142,8 +158,18 @@ nav .menu{
     color: #fefefe;
     text-align: center;
     letter-spacing: 2px;
-    padding-top: 250px;
+    padding: 200px 15px 25px;
 }
+
+
+.headline-container h2{
+    font-size: clamp(.65rem, 2.5vw, 1rem);
+}
+.headline-container li, .headline-container h4{
+     font-size: clamp(.75rem, 2.5vw, 1rem);
+
+}
+
 .headline{
     background-color: #080808;
     margin: 5px;
@@ -180,7 +206,7 @@ nav .menu{
 .modal{
   display: none;
   position: fixed;
-  z-index: 9999;
+  z-index: 4;
   left: 0;
   top: 0;
   right: 0;
@@ -198,7 +224,7 @@ nav .menu{
 }
 .video-modal-content{
   background-color: rgba(0,0,0,0.4);
-  margin: 110px auto;
+  margin: 100px auto;
   padding: 0;
   border-radius: 8px;
   width: 90%;
@@ -216,7 +242,7 @@ nav .menu{
     outline: none;
 }
 .close-trailer, .close-youtube{
-  color: #aaa;
+  color: #FFFF;
   float: right;
   font-size: 35px;
   font-weight: bold;
@@ -263,7 +289,7 @@ nav .menu{
     opacity: 0.75;
 }
 .location{
-    padding-top: 70px;
+    font-size: clamp(.5rem, 2.5vw, 1rem);
 }
 
 /** ARTIST **/
@@ -274,17 +300,19 @@ section{
     display: flex;
     text-align: center;
     margin: 0 auto;
-    background-image: linear-gradient(#001427,#708d81, #001427, #708d81);
-    box-shadow: 0 3px 5px 3px #ffff;
+    background-image: linear-gradient(#708d81, #001427, #708d81);
+    box-shadow: 0 3px 3px 6px #050505;
     text-align: center;
     height: 90%;
+    padding: 0 125px;
 }
 #artist {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 25px 50px;
+    padding-top: 25px;
+    font-size: clamp(.85rem, 2.5vw, 1.2rem);
 }
 #artist img{
     border-radius: 50%;
@@ -304,14 +332,27 @@ section{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 10px 80px;
+    padding: 20px 80px;
     text-align: center;
     color: #fefefe;
     letter-spacing: 2px;
     padding: 10px;
     text-align: justify;
 }
+.icon{
+    display: flex;
+    justify-content: center;
 
+}
+.icon li{
+    display: inline-block;
+    margin: 10px;
+}
+
+.icon img{
+    width: 50px;
+    cursor: pointer;
+}
 /** ALBUM **/
 #album {
     display: flex;
@@ -324,10 +365,13 @@ section{
     border-bottom: 4px solid white;
     margin-bottom: 30px;
 }
-.box{
+#album ul{
+    font-size: clamp(1rem, 2.5vw, 1.2rem);
+}
+.album{
     padding: 25px 0;
 }
-.box img{
+.album img{
     width: 375px;
     cursor: pointer;
     border-radius: 50%;
@@ -359,23 +403,10 @@ section{
     background-color: #FF7400;
     border-color: #FF7400;
     border-width: 4px;
-    color: black;
+    color: #080808;
 }
 
-.icon{
-    display: flex;
-    justify-content: center;
 
-}
-.icon li{
-    display: inline-block;
-    margin: 10px;
-}
-
-.icon img{
-    width: 50px;
-    cursor: pointer;
-}
 
 
 /** FOOTER **/
@@ -393,10 +424,6 @@ section{
     color: #fff;
     font-size: .75em;
 }
-/*.footer p{
-    margin: 0;
-    padding: 0;
-}*/
 .footer a{
     text-decoration: none;
     color: #d9d9d9;
@@ -404,15 +431,10 @@ section{
 
 
 /**MOBILE**/
-@media (min-width:1000px){
- #artist {
-    padding: 25px 300px;
-}
-}
 @media (max-width:1000px){
     nav ul{
     position: fixed;
-    top:100px;
+    top: 90px;
     right: -100%;
     background: rgba(77, 77, 77, .7); 
     height: calc(150px);
@@ -431,32 +453,27 @@ section{
     margin: 0;
     padding-top: 15px;
     }
+     .section{
+    padding: 15px;
+    }
+    .album img{
+    width: 250px;
+    }
+    .icon img{
+    width: 30px;
+    cursor: pointer;
+    }
     #chk1:checked ~ ul{
     right: 0;
   }
 }
 @media (max-width:500px){
-   .site-header{
-    height: 55px;
-    }        
-    .site-header p{
-    font-size: 10px;
-    }
-    .headline-container {
-    padding: 180px 10px 0 0; 
-    font-size: .8em;
-    }
-    #trailer-btn, #yt-btn, .buy-ticket{
-    font-size: 0.65em;
-    }
-    .location{
-    padding-top: 0;
-    font-size: 0.9em;
-    }
-    #artist{
+   
+    
+    .section{
     padding: 15px;
     }
-    .box img{
+    .album img{
     width: 250px;
     }
     .icon img{
