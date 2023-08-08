@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
 }
 
 body {
@@ -13,9 +12,7 @@ body {
 html{
     scroll-behavior: smooth;
 }
-h1{
-    font-size: clamp(1.65rem, 2.5vw, 3rem);
-}
+
 ul{
     padding-left: 0;
 }
@@ -39,7 +36,7 @@ a{
     padding: 6px 0;
 } 
 #countdownTimer, #buy-ticket{
-    font-size: clamp(.65rem, 2.5vw, 1rem);
+    font-size: clamp(.8rem, 2.5vw, 1rem);
     color: #080808;
     letter-spacing: 1.5px;
     font-weight: 600;
@@ -52,7 +49,7 @@ a{
     margin-top: 50px;
     background-image: linear-gradient(#e5e5e5,#000000, #4d4d4d);
     height: 45px;
-        box-shadow: 0 2px 2px 1px #050505;
+    box-shadow: 0 2px 2px 1px #050505;
 
 }
 .sticky{
@@ -132,6 +129,7 @@ nav .menu{
     justify-content: center;
     flex-direction: column;
     padding-top: 80px;
+    width: 100%;
 
 }
 .headline-container{
@@ -160,10 +158,12 @@ nav .menu{
     letter-spacing: 2px;
     padding: 200px 15px 25px;
 }
-
+.headline-container h1{
+    font-size: clamp(1.75rem, 2.5vw, 3.5rem);
+}
 
 .headline-container h2{
-    font-size: clamp(.7rem, 2.5vw, 1rem);
+    font-size: clamp(.825rem, 2.5vw, 1rem);
 }
 .headline-container li, .headline-container h4{
      font-size: clamp(.75rem, 2.5vw, 1rem);
@@ -301,10 +301,9 @@ section{
     text-align: center;
     margin: 0 auto;
     background-image: linear-gradient(#708d81, #001427, #708d81);
-    box-shadow: 0 3px 3px 6px #050505;
     text-align: center;
     height: 90%;
-    padding: 0 125px;
+    padding: 30px 225px;
 }
 #artist {
     display: flex;
@@ -323,6 +322,10 @@ section{
      -webkit-transform: scale(.8); /* Safari 3-8 */
      transform: scale(.8); 
 }
+#serg-photo{
+    width: 180px;
+}
+
 .artist-profile h1{
     border-bottom: 4px solid white;
     margin-bottom: 40px;
@@ -332,16 +335,21 @@ section{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 20px 80px;
     text-align: center;
     color: #fefefe;
     letter-spacing: 2px;
     padding: 10px;
     text-align: justify;
 }
+hr{
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
 .icon{
     display: flex;
     justify-content: center;
+    padding: 15px 0;
 
 }
 .icon li{
@@ -350,7 +358,7 @@ section{
 }
 
 .icon img{
-    width: 50px;
+    width: 35px;
     cursor: pointer;
 }
 /** ALBUM **/
@@ -360,6 +368,8 @@ section{
     justify-content: center;
     flex-direction: column;
     padding: 50px;
+    box-shadow: 0 3px 3px 6px #050505;
+
 }
 #album h1{
     border-bottom: 4px solid white;
@@ -493,5 +503,4 @@ section{
 input[type="checkbox"]{
 display: none;
 }
-
 
