@@ -159,11 +159,13 @@ nav .menu{
     padding: 200px 15px 25px;
 }
 .headline-container h1{
-    font-size: clamp(1.75rem, 2.5vw, 3.5rem);
+    font-size: clamp(2rem, 2.5vw, 3.5rem);
+    text-shadow: 0 0 6px black;
 }
 
 .headline-container h2{
-    font-size: clamp(.825rem, 2.5vw, 1rem);
+    font-size: clamp(.95rem, 2.5vw, 1rem);
+    
 }
 .headline-container li, .headline-container h4{
      font-size: clamp(.75rem, 2.5vw, 1rem);
@@ -323,7 +325,7 @@ section{
      transform: scale(.8); 
 }
 #serg-photo{
-    width: 190px;
+    width: 180px;
 }
 
 .artist-profile h1{
@@ -358,7 +360,7 @@ hr{
 }
 
 .icon img{
-    width: 35px;
+    width: 30px;
     cursor: pointer;
 }
 /** ALBUM **/
@@ -369,8 +371,8 @@ hr{
     flex-direction: column;
     padding: 50px;
     box-shadow: 0 3px 3px 6px #050505;
-
 }
+
 #album h1{
     border-bottom: 4px solid white;
     margin-bottom: 30px;
@@ -386,6 +388,8 @@ hr{
     cursor: pointer;
     border-radius: 50%;
     animation: rotation 22s infinite linear;
+    margin-top: 15px;
+    border: 1px solid black;
 }
 @keyframes rotation {
   from {
@@ -470,7 +474,7 @@ hr{
     width: 250px;
     }
     .icon img{
-    width: 30px;
+    width: 20px;
     cursor: pointer;
     }
     #chk1:checked ~ ul{
@@ -486,21 +490,17 @@ hr{
     .album img{
     width: 250px;
     }
-    .icon img{
-    width: 20px;
-    cursor: pointer;
-    }
+   
     
     nav ul{
     width: 100%;
     font-size: 1.2em;
     }
     .icon img{
-    width: 30px;
+    width: 20px;
     cursor: pointer;
    } 
 }
 input[type="checkbox"]{
 display: none;
 }
-
