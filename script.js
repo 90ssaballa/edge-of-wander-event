@@ -40,25 +40,21 @@ function stopVideo(){
 }
 
 btn.addEventListener("click", function(){
-  console.log("click");
   modal.style.display = "block";
 })
 
 span.addEventListener("click", function(){
-  console.log("close");
   stopVideo();
 })
 
 window.addEventListener("click", function(event){
 if(event.target === modal){
-  console.log("close");
     stopVideo();
   }
 })
 
 window.addEventListener("keydown", function(event){
  if(event.keyCode === 27){
-  console.log("close");
   stopVideo();
 
   }
@@ -66,42 +62,42 @@ window.addEventListener("keydown", function(event){
 
 /*YOUTUBE*/
 
-let youtubeModal = document.getElementById("youtube-modal");
+// let youtubeModal = document.getElementById("youtube-modal");
 
-let youtubeBtn = document.getElementById("yt-btn");
+// let youtubeBtn = document.getElementById("yt-btn");
 
-let close = document.getElementsByClassName("close-youtube")[0];
+// let close = document.getElementsByClassName("close-youtube")[0];
 
-let youtube = document.querySelector("youtube");
+// let youtube = document.querySelector("youtube");
 
-function stopYoutube(){
-  youtubeModal.style.display = "none";
+// function stopYoutube(){
+//   youtubeModal.style.display = "none";
   // youtube.pause(); need to research more about how to stop embedded youtube videos
   // youtube.currentTime = 0;
   // youtube.load();  
-}
+// }
 
-youtubeBtn.addEventListener("click", function(){
-  console.log("click");
-  youtubeModal.style.display = "block";
-})
+// youtubeBtn.addEventListener("click", function(){
+//   console.log("click");
+//   youtubeModal.style.display = "block";
+// })
 
-close.addEventListener("click", function(){
-  console.log("close");
-  stopYoutube();
-})
+// close.addEventListener("click", function(){
+//   console.log("close");
+//   stopYoutube();
+// })
 
-window.addEventListener("click", function(event){
-if(event.target === youtubeModal){
-  console.log("close");
-    stopYoutube();
-  }
-})
+// window.addEventListener("click", function(event){
+// if(event.target === youtubeModal){
+//   console.log("close");
+//     stopYoutube();
+//   }
+// })
 
-window.addEventListener("keydown", function(event){
- if(event.keyCode === 27){
-  console.log("close");
-  stopYoutube();
+// window.addEventListener("keydown", function(event){
+//  if(event.keyCode === 27){
+//   console.log("close");
+//   stopYoutube();
 
-  }
-})
+//   }
+// })
