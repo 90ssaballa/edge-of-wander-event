@@ -7,10 +7,10 @@ He wanted it to be simple but I wasn't confident of what I'm capable of doing wi
 
 <ul>
   <li>✅ build a website using HTML/CSS</li>
-  <li>✅ added the ability to open a modal to play the video trailer and an event day countdown on top of the header using Javascript</li>
+  <li>✅ add the ability to open a modal to play the video trailer and an event day countdown on top of the header using Javascript</li>
   <li>✅ develop locally in the computer using Sublime Text</li>
   <li>✅ deploy website to the web using Github pages</li>
-  <li>✅ bought custom domain name and point it to Github pages - www.edgeofwander2023.com </li>
+  <li>✅ buy custom domain name and point it to Github pages - www.edgeofwander2023.com </li>
 </ul>
 
 I tried to make it a simple, responsive, and mobile-friendly event page. But with the current knowledge I had, I've ran into many challenges and obstacles. 😦
