@@ -1,27 +1,25 @@
 # edge-of-wander-event
----UPDATE 7/23/23---
-I was able to finally get the code working! I updated the html and then reviewed the course on the DOM events. After these and a lot of googling, I found the solution to the issue. Feeling so accomplished :)
 
----UPDATE 7/22/23---
-I got a feedback that it would be nice to have the modal window closed when the Escape button is pressed or the outside of the modal window is clicked. I was able to work on closing the video when Escape is pressed, however, in need of help with closing the video when outside of the modal is clicked.
+👋Hi everyone! I made my first real life project! 🎉
 
+After learning the some HTML, CSS, and basic Javascript through a ZTM course and other online resources, I took on a challenge to build an event page for my brother. 
+He wanted it to be simple but I wasn't confident of what I'm capable of doing with the current knowledge I have with building a website. I wanted to keep on learning so I took on the challenge. 
 
-Welcome to the  Edge of Wander event repository!
-This real life project was to challenge myself in building a web page using the tools I have and what I have learned so far with html, css, and some 
-basic javascript.
+<ul>
+  <li>✅ build a website using HTML/CSS</li>
+  <li>✅ added the ability to open a modal to play the trailer video and an event day countdown on top of the header using Javascript</li>
+  <li>✅ develop locally in the computer using Sublime Text</li>
+  <li>✅ deploy website to the web using Github pages</li>
+  <li>✅ bought custom domain name and point it to Github pages - www.edgeofwander2023.com </li>
+</ul>
 
-I based this page on the layout master project file of the course I am taking. I wanted to make it a simple, responsive, and mobile-friendly event page.
+I tried to make it a simple, responsive, and mobile-friendly event page. But with the current knowledge I had, I've ran into many challenges and obstacles. 😦
+😓 Challenges: There's a lot I didn't know and have yet to learn. Building the page from "scratch" was very challenging but I was learning as I was building it which felt amazing! The idea was simple but as simple as to say it was really hard to actually do it. I began to learn and understand more of the many concepts such as HTML semantic elements, centering the div, use of flexbox, and accessibility. I also had struggled a lot with using Javascript. It wasn't easy to understand when I was learning but during the process of building this page helped me to make sense how to declare a function and stru
 
-The biggest challenge for me making this page was getting too focused on how it would look rather than structuring what I would put on the page. 
-I was constantly making changes to the design, color, and font size of the headline. I realized that I didn't have a structure so I mapped out a sketch of the design concept. I need a buy ticket button, a place to put to poster and event details, the album, and a button to show the video trailer.
-From there, I focused on completing the html structure and then the css.
+💻 Resources: There's a lot of great resources online that helped me build the event page. I utilized the google search and YouTube quite a LOT. Among those resources that greatly helped me were W3schools, stackoverflow, some blod great blog posts! I also got feedback and additional resources from awesome people I met in the ZTM and Scrimba discord communities.
 
-I wrote the script inline with the html code as the concept was still new to me. I had to google javascript and find how to open links and show a countdown timer. There's still a lot for me to learn and I'm glad that the javascript on my page are working.  
+There's been a lot of updates I made as I learned new concepts and I'm proud of what I've accomplished so far. This was the first challenge and always down for more challenges. I had fun with this project and this really helped me understand how to build a website a little more. 👊
 
-I would greatly appreciate feedback to improve this page. :)
+I'd appreciate anyone who would be kind to review my code and learn from it so I can improve on my skills 🙏
 
-This was a fun project! It helped me understand the concepts I learned and be able to apply it.
-Thank y'all!
-
-
-
+Thank you and Happy coding! SARAH 🍵
