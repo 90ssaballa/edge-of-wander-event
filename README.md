@@ -1,6 +1,6 @@
 # edge-of-wander-event
 
-👋Hi everyone! I made my first real life project! 🎉
+👋Hi everyone! I made my first real life project! 🎉 [Edge of Wander 2023](https://edgeofwander2023.com/)
 
 After learning some HTML, CSS, and basic Javascript through a ZTM course and other online resources, I told my brother and he asked me to build him a website for his event. 
 He wanted it to be simple but I wasn't confident of what I'm capable of doing with the current knowledge I have with building a website. I was hesistant but I also wanted to keep on learning so I took on the challenge. 
