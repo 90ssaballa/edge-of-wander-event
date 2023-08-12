@@ -2,7 +2,7 @@
 
 👋Hi everyone! I made my first real life project! 🎉
 
-After learning the some HTML, CSS, and basic Javascript through a ZTM course and other online resources, I took on a challenge to build an event page for my brother. 
+After learning some HTML, CSS, and basic Javascript through a ZTM course and other online resources, I took on a challenge to build an event page for my brother. 
 He wanted it to be simple but I wasn't confident of what I'm capable of doing with the current knowledge I have with building a website. I wanted to keep on learning so I took on the challenge. 
 
 <ul>
@@ -14,7 +14,14 @@ He wanted it to be simple but I wasn't confident of what I'm capable of doing wi
 </ul>
 
 I tried to make it a simple, responsive, and mobile-friendly event page. But with the current knowledge I had, I've ran into many challenges and obstacles. 😦
-😓 Challenges: There's a lot I didn't know and have yet to learn. Building the page from "scratch" was very challenging but I was learning as I was building it which felt amazing! The idea was simple but as simple as to say it was really hard to actually do it. I began to learn and understand more of the many concepts such as HTML semantic elements, centering the div, use of flexbox, and accessibility. I also had struggled a lot with using Javascript. It wasn't easy to understand when I was learning but during the process of building this page helped me to make sense how to declare a function and stru
+😓 Challenges: There's a lot I didn't know and have yet to learn. Building the page from "scratch" was very challenging but I was learning as I was building it which felt amazing! The idea was simple but as simple as it is to say it was actually really hard. It was challenging to design the page but with some of my knowledge with CSS I made the
+
+Working on this project, I began to learn and understand more of the many concepts such as HTML semantic elements, centering the div, use of flexbox, and accessibility. I also learned how to document
+
+
+I also struggled a lot with Javascript. 
+I
+put comments in your html and CSS stylesheet so that it’s very readable
 
 💻 Resources: There's a lot of great resources online that helped me build the event page. I utilized the google search and YouTube quite a LOT. Among those resources that greatly helped me were W3schools, stackoverflow, some blod great blog posts! I also got feedback and additional resources from awesome people I met in the ZTM and Scrimba discord communities.
 
