@@ -34,4 +34,4 @@ I got a feedback that it would be nice to have the modal window closed when the 
 I was able to finally get the code working! I updated the html and then reviewed DOM events. After these and a lot of googling, I found the solution to the issue. Feeling so accomplished :)
 
 ---UPDATE 8/2/2023---
-I received a feedback from someone who reviwed my code! I appreciated that this person took the time to review and give me feedback. I learned more about HTML semantic elements, and made changes on my HTML structure. I was also provided a resource on when to use var vs let vs const when declaring variables. 
+I received a feedback from someone who reviewed my code! I appreciated that this person took the time to review my code, gave me feedback and gave me motivation to keep on learning. I made changes on my HTML structure after learning more about HTML semantic elements. I was also provided a resource on when to use var vs let vs const when declaring variables. 
