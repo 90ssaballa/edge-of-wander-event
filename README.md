@@ -15,10 +15,9 @@ He wanted it to be simple but I wasn't confident of what I'm capable of doing wi
 
 I tried to make it a simple, responsive, and mobile-friendly event page. But with the current knowledge I had, I've ran into many challenges and obstacles. 😦
 
-😓 Challenges: There's a lot I didn't know and have yet to learn. Building the page from "scratch" was very challenging but I was learning as I was building it, which felt amazing! The idea was simple, but as simple as it is to say it was actually really hard. 😞
+😓 Challenges: There's a lot I didn't know and have yet to learn. Building the page from "scratch" was very challenging but I was learning as I was building it, which felt amazing! The idea was simple, but as simple as it is to say it was actually really hard. 😞 I got into some sort of problems centering the text elements and making the texts readable in desktop and mobile views. Additionally, I was having trouble making the site responsive. I've had frustrations, but I was enjoying the learning process and was seeing the result and I kept going and pushed through.
 
-Working on this project, I began to learn and understand more of the many concepts such as HTML semantic elements, centering the div, use of flexbox, and accessibility. I also learned how to document better and put comments not only in the HTML and CSS stylesheet but also in the script as well. This would allow other people reading the code to understand it too.
-
+💡 Learnings: Working on this project, I began to learn and understand more of the many concepts such as HTML semantic elements, centering the div, use of flexbox, responsive design, and accessibility. I also learned how to document better and put comments not only in the HTML and CSS stylesheet but also in the script as well. This would allow other people reading the code to understand it too.
 
 💻 Resources: There's a lot of great resources online that helped me build the event page. I utilized the google search and YouTube quite a LOT. Among those resources that greatly helped me were W3schools, stackoverflow, and some blog posts! I also got feedback and additional resources from awesome people I met in the ZTM and Scrimba discord communities.
 
