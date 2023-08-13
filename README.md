@@ -2,8 +2,8 @@
 
 👋Hi everyone! I made my first real life project! 🎉 
 
-After learning some HTML, CSS, and basic Javascript through a ZTM course and other online resources, I told my brother and he asked me to build him a website for his event. 
-He wanted it to be simple but I wasn't confident of what I'm capable of doing with the current knowledge I have with building a website. I was hesistant but I also wanted to keep on learning so I took on the challenge. 
+After learning some HTML, CSS, and basic Javascript through a ZTM course and other online resources, I told my brother and he asked me if I could build a website for his event. 
+He wanted it to be simple but I wasn't confident of what I'm capable of doing with the current knowledge I have with building a website. I was hesistant but I also wanted to keep on learning so I took on the challenge and hopefully help reach out to people about the event.
 
 <ul>
   <li>✅ build a website using HTML/CSS</li>
