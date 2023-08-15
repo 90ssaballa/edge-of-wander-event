@@ -3,13 +3,6 @@
 👋Hi everyone! I made my first real life project! 🎉 
 
 After learning some HTML, CSS, and basic Javascript through a ZTM course and other online resources, I took on a challenge to build an event page for my brother. 
-<ul>
-  <li>✅ build a website using HTML/CSS</li>
-  <li>✅ add the ability to open a modal to play the video trailer and an event day countdown on top of the header using Javascript</li>
-  <li>✅ develop locally in the computer using Sublime Text</li>
-  <li>✅ deploy website to the web using Github pages</li>
-  <li>✅ buy custom domain name and point it to Github pages - www.edgeofwander2023.com </li>
-</ul>
 
 I tried to make it a simple, responsive, and mobile-friendly event page. But with the current knowledge I had, I've ran into many challenges and obstacles. 😦
 
