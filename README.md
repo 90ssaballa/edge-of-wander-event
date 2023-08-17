@@ -18,7 +18,7 @@ I tried to make it a simple, responsive, and mobile-friendly event page. But wit
 
 💡 Learnings: Working on this project, I began to learn and understand more of the many concepts such as HTML semantic elements, use of flexbox, responsive design, and accessibility. I also learned how to document better and put comments not only in the HTML and CSS stylesheet but also in the script as well. This would allow other people reading the code to understand it too.
 
-💻 Resources: There's a lot of great resources online that helped me build the event page. I utilized the google search and YouTube quite a LOT. Among those resources that greatly helped me were W3schools, stackoverflow, and some blog posts! I also got feedback and additional resources from awesome people I met in the ZTM and Scrimba discord communities.
+💻 Resources: There's a lot of great resources online that helped me build the event page. I utilized the google search and YouTube quite a LOT. Among those resources that greatly helped me were W3schools, stackoverflow, and some blog posts! I also got feedback and additional resources from awesome people I met in the ZTM discord community. I discovered Scrimba and enrolled in the HTML and CSS course and learned more about building a site. Having joined the Scrimba community allowed me to get additional feedback and resources to improve on my coding and page.
 
 There's been a lot of updates I made as I learned new concepts, and I'm proud of what I've accomplished so far. This was the first challenge and will always be down for more challenges. I had fun with this project and this really helped me understand how to build a website a little more. 👊
 
